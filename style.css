@@ -1,0 +1,98 @@
+body {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5F6F7A;
+  border: 5px solid #E68191;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+}
+
+h1 {
+  color: #FFDFB2;
+}
+
+p {
+  color: #ABB1B6;
+}
+
+a {
+  color:  #F4AA8F;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header, footer {
+  background-color: #F0C384;
+  width: 100%;
+  color: #3D4D58;
+}
+
+header {
+    border-bottom: 1px solid #2E3F4B;
+}
+
+footer {
+    border-top: 1px solid #2E3F4B;
+}
+
+header>h1, p {
+  text-align: center;
+  color: inherit;
+}
+
+header>h1 {
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header>div {
+  color: inherit;
+}
+
+
+header>div>p , footer>div>a {
+  color: #3D4D58;
+  margin-bottom: 20px;
+}
+
+footer>div>a {
+  margin-top: 20px;
+}
+
+header>div>p:not(:nth-child(1)) , footer>div>a:not(:nth-child(1)) {
+  border-left: 2px solid #3D4D58;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
+main {
+  /* Why does display need to be declared here & body? */
+  display: flex;
+  flex-direction: row;
+}
+
+/* Why can't this be main>h1? */
+main>div>h1 {
+  margin-bottom: 0px;
+}
+
+main>div {
+  flex-direction: column;
+  width: 200px;
+  margin: 10px;
+  flex-grow: 1;
+  color: #99C8C5;
+}
