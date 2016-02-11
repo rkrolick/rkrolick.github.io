@@ -46,7 +46,10 @@ header>h1, p {
   color: inherit;
 }
 
-
+header>hl {
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
 
 div{
   display: flex;
