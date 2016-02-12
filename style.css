@@ -1,3 +1,8 @@
+@font-face {
+  font-family: RK;
+  src: url('RK.ttf');
+}
+
 body {
   margin-left: auto;
   margin-right: auto;
@@ -10,7 +15,12 @@ body {
   max-width: 720px;
 }
 
+* {
+
+}
+
 h1 {
+  font-family: RK;
   color: #FFDFB2;
 }
 
