@@ -8,13 +8,14 @@ body {
   margin-right: auto;
   background-color: #5F6F7A;
   border: 5px solid #E68191;
-  display: flex;
+  display: flex; /* NHO: interestingly enough, removing this causes a spacing issue, but solves the responsiveness issue */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 720px;
 }
 
+/* NHO: friendly reminder to remove unused code */
 * {
 
 }
@@ -90,11 +91,13 @@ header>div>p:not(:nth-child(1)) , footer>div>a:not(:nth-child(1)) {
 
 main {
   /* Why does display need to be declared here & body? */
+  /* NHO: looks like you do for your specific case because you have two different flex containers set */
   display: flex;
   flex-direction: row;
 }
 
 /* Why can't this be main>h1? */
+/* NHO: looks like you could just do main h1 here */
 main>div>h1 {
   margin-bottom: 0px;
 }
@@ -106,3 +109,6 @@ main>div {
   flex-grow: 1;
   color: #99C8C5;
 }
+
+/* NHO: overall love the styles and layout. Would look into if all of your selectors are being used/not overridden.
+Also appears to be a small issue causing the page to not be responsive but think its an easy fix  */
