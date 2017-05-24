@@ -56,7 +56,7 @@ header>h1, p {
   color: inherit;
 }
 
-header>h1 {
+header>hl {
   margin-bottom: 0px;
   margin-top: 20px;
 }
@@ -106,3 +106,5 @@ main>div {
   flex-grow: 1;
   color: #99C8C5;
 }
+
+/* determine what the color scheme should be for your site */
